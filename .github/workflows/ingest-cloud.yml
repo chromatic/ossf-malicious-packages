@@ -1,9 +1,7 @@
 name: Ingest Cloud OSV
 
 on:
-  schedule:
-  - cron: '*/30 * * * *' # Every half-hour
-  workflow_dispatch:
+  workflow_dispatch: # Disabled: upstream ossf/malicious-packages runs this
 
 permissions: read-all
 

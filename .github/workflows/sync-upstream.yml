@@ -1,0 +1,24 @@
+name: Sync Upstream Fork
+
+on:
+  schedule:
+  - cron: '23 4 * * *' # Daily at 04:23 UTC
+  workflow_dispatch:
+
+permissions: read-all
+
+jobs:
+  sync:
+    name: Sync with ossf/malicious-packages
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Sync fork with upstream
+      run: |
+        gh repo sync chromatic/ossf-malicious-packages \
+          --source ossf/malicious-packages \
+          --branch main
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}

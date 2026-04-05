@@ -1,9 +1,7 @@
 name: Publish Pages
 
 on:
-  schedule:
-  - cron: '9 0 * * *' # Once an day
-  workflow_dispatch:
+  workflow_dispatch: # Disabled: upstream ossf/malicious-packages runs this
 
 permissions: read-all
 

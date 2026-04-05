@@ -1,9 +1,7 @@
 name: Alert on Unmergable Reports
 
 on:
-  schedule:
-  - cron: '0 11 * * 2' # Once an week, at 11 on Tuesday
-  workflow_dispatch:
+  workflow_dispatch: # Disabled: upstream ossf/malicious-packages runs this
 
 permissions: read-all
 
