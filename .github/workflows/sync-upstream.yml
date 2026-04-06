@@ -21,4 +21,4 @@ jobs:
           --source ossf/malicious-packages \
           --branch main
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GH_TOKEN: ${{ github.token }}
