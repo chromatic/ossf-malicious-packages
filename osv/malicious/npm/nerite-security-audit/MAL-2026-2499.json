@@ -1,0 +1,44 @@
+{
+  "modified": "2026-04-06T09:23:07Z",
+  "published": "2026-04-06T09:23:07Z",
+  "schema_version": "1.7.4",
+  "id": "MAL-2026-2499",
+  "summary": "Malicious code in nerite-security-audit (npm)",
+  "details": "Collects and exfiltrates sensitive data (env vars, SSH keys, keystores, history) via HTTPS and DNS. Suspicious domain and disabled SSL validation.",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "nerite-security-audit"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "type": "REPORT",
+      "url": "https://app.safedep.io/community/malysis/01KNBR7A02BNGASPF64VNCNZ3C"
+    }
+  ],
+  "credits": [
+    {
+      "name": "SafeDep",
+      "type": "FINDER",
+      "contact": [
+        "https://safedep.io"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": null
+  }
+}

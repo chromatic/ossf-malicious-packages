@@ -1,10 +1,10 @@
 {
-  "modified": "2026-04-05T18:50:25Z",
+  "modified": "2026-04-06T23:48:49Z",
   "published": "2026-04-05T15:30:57Z",
   "schema_version": "1.7.4",
   "id": "MAL-2026-2492",
   "summary": "Malicious code in admin0911 (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (5c85e038183d5abde236e2f52464a662b6aed5f6129c6ad6a568ec565c361f89)\nThe OpenSSF Package Analysis project identified 'admin0911' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (8516309c67b62cd05a8cec44d5bd7cb5ebceebd331c870e3589ab027bb926bb7)\nThe OpenSSF Package Analysis project identified 'admin0911' @ 1.0.38 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -22,7 +22,29 @@
         "1.0.11",
         "1.0.10",
         "1.0.14",
-        "1.0.13"
+        "1.0.13",
+        "1.0.21",
+        "1.0.19",
+        "1.0.23",
+        "1.0.38",
+        "1.0.39",
+        "1.0.37",
+        "1.0.44",
+        "1.0.47",
+        "1.0.48",
+        "1.0.45",
+        "1.0.43",
+        "1.0.51",
+        "1.0.52",
+        "1.0.49",
+        "1.0.55",
+        "1.0.56",
+        "1.0.54",
+        "1.0.62",
+        "1.0.61",
+        "1.0.60",
+        "1.0.64",
+        "1.0.63"
       ]
     }
   ],
@@ -135,6 +157,204 @@
         "modified_time": "2026-04-05T18:35:52Z",
         "versions": [
           "1.0.13"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "cfc467e110572f449912dbc6e27e5cdb26fbe049b8c6dd378f5c4ae7e41b156f",
+        "import_time": "2026-04-06T16:20:23.93956787Z",
+        "modified_time": "2026-04-06T16:15:38Z",
+        "versions": [
+          "1.0.21"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "00544f3a87422e5d3722f08a03550e56980362172bfbe064a478724f4c50e39d",
+        "import_time": "2026-04-06T16:20:23.78682334Z",
+        "modified_time": "2026-04-06T15:55:45Z",
+        "versions": [
+          "1.0.19"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "7ba859281540df54fdbc16e0fb345bcdd8992096d3aba54aa31c6968a71f421c",
+        "import_time": "2026-04-06T16:48:17.812333238Z",
+        "modified_time": "2026-04-06T16:25:44Z",
+        "versions": [
+          "1.0.23"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "8516309c67b62cd05a8cec44d5bd7cb5ebceebd331c870e3589ab027bb926bb7",
+        "import_time": "2026-04-06T19:49:55.614332754Z",
+        "modified_time": "2026-04-06T19:40:56Z",
+        "versions": [
+          "1.0.38"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "0f0a6fce857d51342c57c185f8d059dbad9c04f410521bd2a0c555811b57a82c",
+        "import_time": "2026-04-06T20:17:05.724520146Z",
+        "modified_time": "2026-04-06T19:52:43Z",
+        "versions": [
+          "1.0.39"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "f5929b05d89b9d44dc61f8bb1a60a40fa66f3e6d6fa09ce845562163ffd251d2",
+        "import_time": "2026-04-06T20:17:05.575367119Z",
+        "modified_time": "2026-04-06T19:52:32Z",
+        "versions": [
+          "1.0.37"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "a5026e814264c4520bc542d2cfe990af525e6724c2cc684ebadb95dabd1242a3",
+        "import_time": "2026-04-06T21:15:54.772352014Z",
+        "modified_time": "2026-04-06T21:11:36Z",
+        "versions": [
+          "1.0.44"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "2b03020b2462366f58fbcae62d80fa2e2ac7b312dac3ebf57fd59ab7b0c4a4a7",
+        "import_time": "2026-04-06T21:46:41.302491648Z",
+        "modified_time": "2026-04-06T21:26:19Z",
+        "versions": [
+          "1.0.47"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "7820c18fe358cd7a14d30da3040d1ba0ca02a2189f4fe1f84a98b9636fac5464",
+        "import_time": "2026-04-06T21:46:41.343937952Z",
+        "modified_time": "2026-04-06T21:30:48Z",
+        "versions": [
+          "1.0.48"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "a76584e7e264e71950f5170fe4470e06e8ad48398335fe58a5e5523f1f33abcf",
+        "import_time": "2026-04-06T21:46:41.226726765Z",
+        "modified_time": "2026-04-06T21:16:33Z",
+        "versions": [
+          "1.0.45"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "a9d3d2e1466512fccf2f526bcfc8f57f1aa0bf474431bf633d8f65d1e6c2fad2",
+        "import_time": "2026-04-06T21:46:41.410027975Z",
+        "modified_time": "2026-04-06T21:37:38Z",
+        "versions": [
+          "1.0.43"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "04c5b0bd097bb02ad2646265eed64a5915e7c84af6f44e3c0bf3fceac6ec8e3d",
+        "import_time": "2026-04-06T22:13:27.449644414Z",
+        "modified_time": "2026-04-06T22:07:37Z",
+        "versions": [
+          "1.0.51"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "1961aefe764eaa2339491f5bbba0bce6623f9039f47930540e7a52c93a3162ff",
+        "import_time": "2026-04-06T22:13:27.350071751Z",
+        "modified_time": "2026-04-06T22:06:41Z",
+        "versions": [
+          "1.0.52"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "8c2e9219becf1d5a997b4166889751cf6da7737d9661e25516aa7b9a4afece74",
+        "import_time": "2026-04-06T22:13:27.252861072Z",
+        "modified_time": "2026-04-06T21:50:52Z",
+        "versions": [
+          "1.0.49"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "30b4145d46778b93d12881e8d0d99fc6c0f021ce12a68bde4ba924ad125284db",
+        "import_time": "2026-04-06T22:46:57.770537922Z",
+        "modified_time": "2026-04-06T22:18:24Z",
+        "versions": [
+          "1.0.55"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "c7229e750b5648710bbf20e1aa91f887cc53234fcec80679463d6731781a1885",
+        "import_time": "2026-04-06T22:46:57.843281364Z",
+        "modified_time": "2026-04-06T22:27:55Z",
+        "versions": [
+          "1.0.56"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "f20770c413b0edb94ebd3197340b57096ece2c44821a5546aa6e13dbb57ba09e",
+        "import_time": "2026-04-06T22:46:57.705418555Z",
+        "modified_time": "2026-04-06T22:17:22Z",
+        "versions": [
+          "1.0.54"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "01a2c86b50650bff2c33907d686fe824f4b4afd4b33e95885bb118ac00e5cfb3",
+        "import_time": "2026-04-06T23:15:35.847481468Z",
+        "modified_time": "2026-04-06T23:07:13Z",
+        "versions": [
+          "1.0.62"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "b7d8ba2a640c047ff3933948e8e50322a6ccf3afb05e27acb64137bbeb064584",
+        "import_time": "2026-04-06T23:15:35.703939527Z",
+        "modified_time": "2026-04-06T23:06:42Z",
+        "versions": [
+          "1.0.61"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "d631267d1bceb36cb2e6dad1e41ebb630184de67466e5ceef0fbe6cb4291237f",
+        "import_time": "2026-04-06T23:15:35.518361188Z",
+        "modified_time": "2026-04-06T23:01:08Z",
+        "versions": [
+          "1.0.60"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "0811ed207df49a8b2f03fb524ad90d2a754df67f180eb7f78568ea1bffecb9f9",
+        "import_time": "2026-04-06T23:46:45.445054659Z",
+        "modified_time": "2026-04-06T23:24:06Z",
+        "versions": [
+          "1.0.64"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "f59c404d5fd3cff9daa12f668fa89a19d33b8f4d6a8cab9a3db25695a0a79cfb",
+        "import_time": "2026-04-06T23:46:45.354391299Z",
+        "modified_time": "2026-04-06T23:17:23Z",
+        "versions": [
+          "1.0.63"
         ]
       }
     ]

@@ -1,0 +1,44 @@
+{
+  "modified": "2026-04-06T09:11:24Z",
+  "published": "2026-04-06T09:11:24Z",
+  "schema_version": "1.7.4",
+  "id": "MAL-2026-2497",
+  "summary": "Malicious code in commerce-utils (npm)",
+  "details": "Malicious package due to data exfiltration to a suspicious host, combined with arbitrary code execution during preinstall. ",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "commerce-utils"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "type": "REPORT",
+      "url": "https://app.safedep.io/community/malysis/01KNFFV2J9TJFEVM7P4RHQZQBY"
+    }
+  ],
+  "credits": [
+    {
+      "name": "SafeDep",
+      "type": "FINDER",
+      "contact": [
+        "https://safedep.io"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": null
+  }
+}
