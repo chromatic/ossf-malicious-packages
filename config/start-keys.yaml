@@ -1,11 +1,11 @@
 amazon-inspector:
-    IN-MAL-: IN-MAL-2026-001435.json
+    IN-MAL-: IN-MAL-2026-001938.json
 kam193:
-    pypi/packages/malicious/osv/: 0f266244f6acc33003fc1a2964df03ed9563ecdb
+    pypi/packages/malicious/osv/: 63cd735aed912d28f679ea00a07e2387807899c3
     pypi/packages/pentest/osv/: 0d65fa30569acb74a4cd2f6968297f9cf794b510
-    pypi/packages/probably_pentest/osv/: c0b01375e1a9a1709020c5c02ba9126253cc171f
+    pypi/packages/probably_pentest/osv/: 6d4791af41f8d8d55e597e2267e85f5b73886aa5
 ossf-package-analysis:
-    confident/: confident/20260411/092048-npm-paysafe-google-pay-99.0.0.json
+    confident/: confident/20260430/143604-npm-sirens-lament-219.0.0.json
 reversing-labs:
-    RLMA-: RLMA-2026-01825.json
-    RLUA-: RLUA-2026-01809.json
+    RLMA-: RLMA-2026-02064.json
+    RLUA-: RLUA-2026-02074.json

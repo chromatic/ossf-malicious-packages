@@ -1,5 +1,5 @@
 {
-  "modified": "2026-03-19T12:23:26Z",
+  "modified": "2026-04-22T23:24:15Z",
   "published": "2024-07-26T16:53:30Z",
   "schema_version": "1.7.4",
   "id": "MAL-2024-11746",
@@ -141,6 +141,54 @@
         "import_time": "2026-03-19T12:20:41.213154183Z",
         "id": "RLUA-2026-00895",
         "modified_time": "2026-03-18T12:20:14Z"
+      },
+      {
+        "source": "kam193",
+        "sha256": "a4ebfa6a9372c6d9a1760b86d21373cc8aa46c9296072d18abaeeb1df1bcbdee",
+        "import_time": "2026-04-22T21:21:55.652962828Z",
+        "id": "pypi/GENERIC-standard-pypi-install-pentest/voto3",
+        "modified_time": "2024-07-26T16:53:30Z",
+        "versions": [
+          "0.1",
+          "0.2.0",
+          "0.2",
+          "0.3",
+          "0.3.0",
+          "0.7.0",
+          "0.9.0"
+        ]
+      },
+      {
+        "source": "kam193",
+        "sha256": "a81ee11c866c958196916b43fb34ae7477affde50e22f5a6e6a24f4beb76d37e",
+        "import_time": "2026-04-22T22:48:22.041006867Z",
+        "id": "pypi/GENERIC-standard-pypi-install-pentest/voto3",
+        "modified_time": "2024-07-26T16:53:30Z",
+        "versions": [
+          "0.1",
+          "0.2",
+          "0.2.0",
+          "0.3.0",
+          "0.3",
+          "0.7.0",
+          "0.9.0"
+        ]
+      },
+      {
+        "source": "kam193",
+        "sha256": "41cd87da95a7ff9fe885a37749b315e94a5d40315926df9fd428f2ccce79f5f9",
+        "import_time": "2026-04-22T23:22:12.864234006Z",
+        "id": "pypi/GENERIC-standard-pypi-install-pentest/voto3",
+        "modified_time": "2024-07-26T16:53:30Z",
+        "versions": [
+          "0.1",
+          "0.2",
+          "0.2.0",
+          "0.3",
+          "0.3.0",
+          "0.7.0",
+          "0.9.0"
+        ]
       }
     ]
   }
