@@ -2,7 +2,7 @@ name: Sync Upstream Fork
 
 on:
   schedule:
-  - cron: '23 4 * * *' # Daily at 04:23 UTC
+    - cron: '23 4 * * *' # Daily at 04:23 UTC
   workflow_dispatch:
 
 permissions: read-all
@@ -15,10 +15,35 @@ jobs:
       contents: write
 
     steps:
-    - name: Sync fork with upstream
-      run: |
-        gh repo sync chromatic/ossf-malicious-packages \
-          --source ossf/malicious-packages \
-          --branch main
-      env:
-        GH_TOKEN: ${{ github.token }}
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync fork but keep local workflows
+        run: |
+          set -euxo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git remote add upstream https://github.com/ossf/malicious-packages.git
+          git fetch upstream main
+          git checkout main
+
+          # Snapshot current local workflows before merge
+          git branch premerge-workflows
+
+          git merge --no-edit upstream/main
+
+          # Force local workflow files back (handles adds/modifies/deletes from upstream)
+          git restore --source=premerge-workflows --staged --worktree .github/workflows || true
+          git add .github/workflows
+
+          # If restore changed tree, amend merge commit so push contains no workflow diffs
+          if ! git diff --cached --quiet || ! git diff --quiet; then
+            git commit --amend --no-edit
+          fi
+
+          git branch -D premerge-workflows || true
+          git push origin main
