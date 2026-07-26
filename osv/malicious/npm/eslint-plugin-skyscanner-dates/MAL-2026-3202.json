@@ -1,10 +1,13 @@
 {
-  "modified": "2026-05-01T10:59:40Z",
+  "modified": "2026-07-09T09:19:05Z",
   "published": "2026-04-30T17:59:18Z",
   "schema_version": "1.7.4",
   "id": "MAL-2026-3202",
+  "aliases": [
+    "GHSA-29h9-fw37-6xhc"
+  ],
   "summary": "Malicious code in eslint-plugin-skyscanner-dates (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: amazon-inspector (0fa3152c92c23ebec42990f14c77642de971e5a5464b0e7c25ecdea012ac81e4)\nThe package eslint-plugin-skyscanner-dates was found to contain malicious code.\n\n## Source: ossf-package-analysis (fee26f45917181f84e4c801d2e104b42fccc84e04dae778e5e06de3d5ce863d8)\nThe OpenSSF Package Analysis project identified 'eslint-plugin-skyscanner-dates' @ 99.0.2 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: amazon-inspector (0fa3152c92c23ebec42990f14c77642de971e5a5464b0e7c25ecdea012ac81e4)\nThe package eslint-plugin-skyscanner-dates was found to contain malicious code.\n\n## Source: ghsa-malware (49d183fbcf6d8810af873d90fbf1d11f793bd5cd2c5a28ee575301ad67b8710a)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (fee26f45917181f84e4c801d2e104b42fccc84e04dae778e5e06de3d5ce863d8)\nThe OpenSSF Package Analysis project identified 'eslint-plugin-skyscanner-dates' @ 99.0.2 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -13,8 +16,26 @@
       },
       "versions": [
         "99.0.2",
-        "99.0.5"
-      ]
+        "99.0.5",
+        "99.0.4",
+        "99.0.1",
+        "99.0.0"
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-29h9-fw37-6xhc"
     }
   ],
   "credits": [
@@ -31,6 +52,13 @@
       "contact": [
         "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
+      ]
+    },
+    {
+      "name": "ReversingLabs",
+      "type": "FINDER",
+      "contact": [
+        "https://www.reversinglabs.com"
       ]
     }
   ],
@@ -60,6 +88,41 @@
         "import_time": "2026-05-01T10:57:49.175460891Z",
         "modified_time": "2026-05-01T10:50:43Z",
         "versions": [
+          "99.0.5"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "dd3c0ecb95beda4fd2469c23d844511edb71fc703c6098892029a7309ee686f0",
+        "import_time": "2026-05-04T03:13:19.407085233Z",
+        "modified_time": "2026-04-30T19:10:58Z",
+        "versions": [
+          "99.0.4"
+        ]
+      },
+      {
+        "source": "ghsa-malware",
+        "sha256": "49d183fbcf6d8810af873d90fbf1d11f793bd5cd2c5a28ee575301ad67b8710a",
+        "import_time": "2026-05-05T15:54:22.814904784Z",
+        "id": "GHSA-29h9-fw37-6xhc",
+        "modified_time": "2026-05-05T14:34:28Z",
+        "versions": [
+          "99.0.5",
+          "99.0.4",
+          "99.0.2",
+          "99.0.1",
+          "99.0.0"
+        ]
+      },
+      {
+        "source": "reversing-labs",
+        "sha256": "6a8acb8c94929a06cbd3b1c4ccd3dfaf292c45b0e7403b257dabe51a8df482c4",
+        "import_time": "2026-07-09T09:16:30.371544278Z",
+        "id": "RLMA-2026-05075",
+        "modified_time": "2026-07-07T12:49:38Z",
+        "versions": [
+          "99.0.0",
+          "99.0.1",
           "99.0.5"
         ]
       }

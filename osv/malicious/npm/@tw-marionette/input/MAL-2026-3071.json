@@ -1,21 +1,49 @@
 {
-  "modified": "2026-04-30T22:25:08Z",
+  "modified": "2026-05-04T03:25:18Z",
   "published": "2026-04-25T17:17:50Z",
   "schema_version": "1.7.4",
   "id": "MAL-2026-3071",
+  "aliases": [
+    "GHSA-584r-4qf7-jqf3"
+  ],
   "summary": "Malicious code in @tw-marionette/input (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: amazon-inspector (c6b93bf39d5351c220722a3326600c9855309a8e76cb6e10b8cff20f0d9bb102)\nThe package @tw-marionette/input was found to contain malicious code.\n\n## Source: ossf-package-analysis (5064bc6b023c67ddcfdd1f7a4a923c61aa4b1ca6454e97027cd64e049fdbc693)\nThe OpenSSF Package Analysis project identified '@tw-marionette/input' @ 99.0.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: amazon-inspector (c6b93bf39d5351c220722a3326600c9855309a8e76cb6e10b8cff20f0d9bb102)\nThe package @tw-marionette/input was found to contain malicious code.\n\n## Source: ghsa-malware (8c22f8f607175d5c7bf7a5880a8ad93b299d5a219fa75b521749fc2672583765)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (5064bc6b023c67ddcfdd1f7a4a923c61aa4b1ca6454e97027cd64e049fdbc693)\nThe OpenSSF Package Analysis project identified '@tw-marionette/input' @ 99.0.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
         "ecosystem": "npm",
         "name": "@tw-marionette/input"
       },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "99.0.1",
         "99.0.2",
         "99.0.4"
-      ]
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-584r-4qf7-jqf3"
     }
   ],
   "credits": [
@@ -73,6 +101,23 @@
           "99.0.1",
           "99.0.2",
           "99.0.4"
+        ]
+      },
+      {
+        "source": "ghsa-malware",
+        "sha256": "8c22f8f607175d5c7bf7a5880a8ad93b299d5a219fa75b521749fc2672583765",
+        "import_time": "2026-05-04T03:23:29.816465454Z",
+        "id": "GHSA-584r-4qf7-jqf3",
+        "modified_time": "2026-05-04T03:02:59Z",
+        "ranges": [
+          {
+            "type": "SEMVER",
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ]
+          }
         ]
       }
     ]

@@ -1,22 +1,50 @@
 {
-  "modified": "2026-04-30T22:25:07Z",
+  "modified": "2026-05-04T03:25:18Z",
   "published": "2026-04-24T18:21:08Z",
   "schema_version": "1.7.4",
   "id": "MAL-2026-3065",
+  "aliases": [
+    "GHSA-m6jr-4x3f-2ph2"
+  ],
   "summary": "Malicious code in @m0ntana/app.web (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: amazon-inspector (2ffd5d049b453ec288428ae1c5b369effbc0397e753720aeb3900a746bb83519)\nThe package @m0ntana/app.web was found to contain malicious code.\n\n## Source: ossf-package-analysis (2a61f433fc52a57355b3f1e5b8019e44d53643492e5006ac4198ed8e79c38454)\nThe OpenSSF Package Analysis project identified '@m0ntana/app.web' @ 99.0.6 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: amazon-inspector (2ffd5d049b453ec288428ae1c5b369effbc0397e753720aeb3900a746bb83519)\nThe package @m0ntana/app.web was found to contain malicious code.\n\n## Source: ghsa-malware (b7fdecb35a1116b81d1340d7d6cc748a050b4dde46beb279a40f6e049955caf3)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (2a61f433fc52a57355b3f1e5b8019e44d53643492e5006ac4198ed8e79c38454)\nThe OpenSSF Package Analysis project identified '@m0ntana/app.web' @ 99.0.6 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
         "ecosystem": "npm",
         "name": "@m0ntana/app.web"
       },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "99.0.6",
         "99.0.2",
         "99.0.5",
         "99.0.3"
-      ]
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-m6jr-4x3f-2ph2"
     }
   ],
   "credits": [
@@ -84,6 +112,23 @@
           "99.0.2",
           "99.0.5",
           "99.0.3"
+        ]
+      },
+      {
+        "source": "ghsa-malware",
+        "sha256": "b7fdecb35a1116b81d1340d7d6cc748a050b4dde46beb279a40f6e049955caf3",
+        "import_time": "2026-05-04T03:23:29.836584298Z",
+        "id": "GHSA-m6jr-4x3f-2ph2",
+        "modified_time": "2026-05-04T03:02:53Z",
+        "ranges": [
+          {
+            "type": "SEMVER",
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ]
+          }
         ]
       }
     ]
